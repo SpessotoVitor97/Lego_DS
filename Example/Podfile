@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Lego_DS_Example' do
+  pod 'Lego_DS', :path => '../'
+
+  target 'Lego_DS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
