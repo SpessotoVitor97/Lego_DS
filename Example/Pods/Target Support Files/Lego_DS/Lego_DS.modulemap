@@ -1,0 +1,6 @@
+framework module Lego_DS {
+  umbrella header "Lego_DS-umbrella.h"
+
+  export *
+  module * { export * }
+}

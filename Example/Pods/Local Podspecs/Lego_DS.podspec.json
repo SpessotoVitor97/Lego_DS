@@ -1,0 +1,22 @@
+{
+  "name": "Lego_DS",
+  "version": "0.1.0",
+  "summary": "A short description of Lego_DS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Vitor Spessoto/Lego_DS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Vitor Spessoto": "spessoto97@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/Vitor Spessoto/Lego_DS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Lego_DS/Classes/**/*"
+}

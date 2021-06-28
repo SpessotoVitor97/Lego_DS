@@ -1,0 +1,16 @@
+PODS:
+  - Lego_DS (0.1.0)
+
+DEPENDENCIES:
+  - Lego_DS (from `../`)
+
+EXTERNAL SOURCES:
+  Lego_DS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Lego_DS: 840051b8a17da51a4f4dcda59de721b9b82a6974
+
+PODFILE CHECKSUM: f5a96955e9f2a92467d7b6fe199ea24508c3c2bf
+
+COCOAPODS: 1.10.1
