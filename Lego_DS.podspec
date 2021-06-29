@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Lego_DS/Classes/**/*'
+  s.resources = ['Lego_DS/Resources/Images/*', 'Lego_DS/Resources/Fonts/*']
   s.resource_bundles = {'Lego_DS' => ['Lego_DS/Assets/**/*']}
   
   s.vendored_frameworks = 'Lego_DS.xcframework'

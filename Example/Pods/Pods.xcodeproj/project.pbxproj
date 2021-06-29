@@ -169,9 +169,8 @@
 		2A9F961EBCF0E4CCF134D4C95DDD0241 /* Lego_DS */ = {
 			isa = PBXGroup;
 			children = (
-				2D4567B0268A418C008F676F /* DSButton.swift */,
-				2D4567B4268A41D6008F676F /* StyleGuide.swift */,
-				2D4567E7268A43FA008F676F /* Utils */,
+				2D4567EB268B60AA008F676F /* Components */,
+				2D4567EA268B609B008F676F /* Shared */,
 				2D4567E1268A4381008F676F /* Resources */,
 				942155FDDD6361AE9E928A647D21CAD3 /* Pod */,
 				3673F15F013D406BAC1422E20764B3ED /* Support Files */,
@@ -232,6 +231,23 @@
 				2D4567B8268A423D008F676F /* UIView+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		2D4567EA268B609B008F676F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2D4567B4268A41D6008F676F /* StyleGuide.swift */,
+				2D4567E7268A43FA008F676F /* Utils */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2D4567EB268B60AA008F676F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2D4567B0268A418C008F676F /* DSButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		33E70F423C8FA16A903CF884EBB930E4 /* Development Pods */ = {
@@ -426,7 +442,9 @@
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
 					F714D41235BC928234651852EC8389A3 = {
+						DevelopmentTeam = 69KP7AWB28;
 						LastSwiftMigration = 1250;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -713,22 +731,28 @@
 			baseConfigurationReference = 051C44E52775BB8F7F00D74E85C653D6 /* Lego_DS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Lego_DS/Lego_DS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Lego_DS/Lego_DS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Lego_DS/Lego_DS.modulemap";
 				PRODUCT_MODULE_NAME = Lego_DS;
 				PRODUCT_NAME = Lego_DS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -745,22 +769,28 @@
 			baseConfigurationReference = 0C5591508F2F1BFEDCDA0D1786BD9629 /* Lego_DS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69KP7AWB28;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Lego_DS/Lego_DS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Lego_DS/Lego_DS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Lego_DS/Lego_DS.modulemap";
 				PRODUCT_MODULE_NAME = Lego_DS;
 				PRODUCT_NAME = Lego_DS;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";

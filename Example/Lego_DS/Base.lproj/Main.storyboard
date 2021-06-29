@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,66 +20,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMq-24-pMZ" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMq-24-pMZ" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="8" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="noT-WO-Wlx"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-E6-UhQ" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-E6-UhQ" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="76" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pj5-tw-Fff"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-TY-orM" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-TY-orM" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="144" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IUP-HH-OWJ"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nix-Wk-98k" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nix-Wk-98k" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="212" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0mZ-07-sGH"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVi-YX-Hm7" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVi-YX-Hm7" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="280" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NNv-bA-M1O"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-TU-hIy" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-TU-hIy" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="348" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yjB-eJ-hpp"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhl-2R-iY5" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhl-2R-iY5" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="416" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aIk-AR-SgE"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-ja-5tg" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-ja-5tg" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="484" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Dlb-B3-PcW"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-mQ-0iq" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-mQ-0iq" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="552" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="03q-Xm-ZW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="chevron.right" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5w-np-U6E" customClass="DSButton" customModule="Lego_DS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5w-np-U6E" customClass="DSButton" customModule="Lego_DS">
                                 <rect key="frame" x="16" y="620" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iUU-1q-jUq"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EVi-YX-Hm7" firstAttribute="top" secondItem="nix-Wk-98k" secondAttribute="bottom" constant="8" symbolic="YES" id="1lJ-Yr-G9U"/>
+                            <constraint firstItem="z8U-ja-5tg" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2ld-Se-VvJ"/>
+                            <constraint firstItem="s5w-np-U6E" firstAttribute="top" secondItem="H2G-mQ-0iq" secondAttribute="bottom" constant="8" symbolic="YES" id="6cN-p1-odp"/>
+                            <constraint firstItem="Bhl-2R-iY5" firstAttribute="top" secondItem="1XI-TU-hIy" secondAttribute="bottom" constant="8" symbolic="YES" id="9CF-az-RkD"/>
+                            <constraint firstItem="wrb-E6-UhQ" firstAttribute="top" secondItem="WMq-24-pMZ" secondAttribute="bottom" constant="8" symbolic="YES" id="9H3-Za-fBd"/>
+                            <constraint firstItem="wrb-E6-UhQ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="CYg-HZ-EWg"/>
+                            <constraint firstItem="H2G-mQ-0iq" firstAttribute="top" secondItem="z8U-ja-5tg" secondAttribute="bottom" constant="8" symbolic="YES" id="Cex-AM-5l9"/>
+                            <constraint firstItem="TCY-TY-orM" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hr5-WX-CAX"/>
+                            <constraint firstItem="WMq-24-pMZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hzb-7X-g4I"/>
+                            <constraint firstAttribute="trailing" secondItem="s5w-np-U6E" secondAttribute="trailing" constant="16" id="ILl-gM-cNW"/>
+                            <constraint firstItem="wrb-E6-UhQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="K1t-zU-6Bx"/>
+                            <constraint firstItem="1XI-TU-hIy" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="KvB-8i-aDl"/>
+                            <constraint firstItem="Bhl-2R-iY5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="M1L-YT-F3B"/>
+                            <constraint firstItem="s5w-np-U6E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="MW1-vP-weL"/>
+                            <constraint firstItem="EVi-YX-Hm7" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Mun-pL-cGs"/>
+                            <constraint firstItem="H2G-mQ-0iq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RkA-Lr-63a"/>
+                            <constraint firstItem="1XI-TU-hIy" firstAttribute="top" secondItem="EVi-YX-Hm7" secondAttribute="bottom" constant="8" symbolic="YES" id="TCI-eE-dJc"/>
+                            <constraint firstItem="1XI-TU-hIy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XJj-Rz-k0V"/>
+                            <constraint firstItem="nix-Wk-98k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Xu4-Sq-uuX"/>
+                            <constraint firstItem="nix-Wk-98k" firstAttribute="top" secondItem="TCY-TY-orM" secondAttribute="bottom" constant="8" symbolic="YES" id="cP1-az-Dyv"/>
+                            <constraint firstItem="z8U-ja-5tg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="caW-ge-OQB"/>
+                            <constraint firstItem="TCY-TY-orM" firstAttribute="top" secondItem="wrb-E6-UhQ" secondAttribute="bottom" constant="8" symbolic="YES" id="d3e-Y8-3pn"/>
+                            <constraint firstItem="TCY-TY-orM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="fYX-cm-4rr"/>
+                            <constraint firstItem="z8U-ja-5tg" firstAttribute="top" secondItem="Bhl-2R-iY5" secondAttribute="bottom" constant="8" symbolic="YES" id="gYw-au-p9y"/>
+                            <constraint firstItem="EVi-YX-Hm7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hfW-ef-2JA"/>
+                            <constraint firstItem="WMq-24-pMZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="kTZ-mf-gvR"/>
+                            <constraint firstItem="H2G-mQ-0iq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="o3q-eV-0Nc"/>
+                            <constraint firstItem="WMq-24-pMZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="sA7-SC-wsU"/>
+                            <constraint firstItem="nix-Wk-98k" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="tdR-Tb-BNO"/>
+                            <constraint firstItem="Bhl-2R-iY5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="zl2-44-h6b"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="primaryArrowButton" destination="H2G-mQ-0iq" id="jqL-nd-Vgb"/>
+                        <outlet property="primaryArrowButton" destination="H2G-mQ-0iq" id="x6p-TX-Q9c"/>
                         <outlet property="primaryDefaultButton" destination="WMq-24-pMZ" id="uqL-jC-og7"/>
                         <outlet property="primaryDefaultButtonDisabled" destination="nix-Wk-98k" id="ffb-T6-gCg"/>
                         <outlet property="primaryDefaultButtonHighlighted" destination="wrb-E6-UhQ" id="YYg-d6-VFB"/>
                         <outlet property="primaryDefaultButtonSelected" destination="TCY-TY-orM" id="Cbe-sf-UmP"/>
-                        <outlet property="primaryIconButton" destination="s5w-np-U6E" id="ibX-iK-bce"/>
+                        <outlet property="primaryIconButton" destination="s5w-np-U6E" id="9KK-OZ-Zod"/>
                         <outlet property="secondaryDefaultButton" destination="EVi-YX-Hm7" id="Usa-FG-j5f"/>
                         <outlet property="secondaryDefaultButtonDisabled" destination="z8U-ja-5tg" id="DeM-B8-0BG"/>
                         <outlet property="secondaryDefaultButtonHighlighted" destination="1XI-TU-hIy" id="GD2-qg-nJr"/>
@@ -90,4 +148,10 @@
             <point key="canvasLocation" x="140" y="107.49625187406298"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

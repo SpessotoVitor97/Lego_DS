@@ -44,11 +44,30 @@ public class DSButton: UIButton {
     //*************************************************
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configureDefault()
+//        titleLabel!.addSubview(iconImageView)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        configureDefault()
+//        titleLabel!.addSubview(iconImageView)
     }
+    
+    //*************************************************
+    // MARK: - Lifecycle
+    //*************************************************
+//    public override func layoutSubviews() {
+//        super.layoutSubviews()
+//        let iconSize: CGFloat = 24
+//        let iconX: CGFloat = (frame.size.width - titleLabel!.frame.size.width - iconSize - 6) / 2
+//
+//        iconImageView.frame = CGRect(x: iconX,
+//                                  y: (frame.size.height - iconSize) / 2,
+//                                  width: iconSize,
+//                                  height: iconSize)
+//
+//    }
     
     //*************************************************
     // MARK: - Public methods
@@ -82,7 +101,11 @@ public class DSButton: UIButton {
     //*************************************************
     // MARK: - Private methods
     //*************************************************
-    private func configurePrimaryDefault(paddingEnabled: Bool) {
+    private func configureDefault() {
+        configurePrimaryDefault()
+    }
+    
+    private func configurePrimaryDefault(paddingEnabled: Bool = true) {
         titleLabel?.font = StyleGuide.Button.Font.default.font
         titleLabel?.adjustsFontSizeToFitWidth = true
         titleLabel?.minimumScaleFactor = 0.5
@@ -105,25 +128,17 @@ public class DSButton: UIButton {
         setBackgroundColor(StyleGuide.Button.BackgroundColor.primary.disabled, for: .disabled)
     }
     
-    private func configurePrimaryArrow(paddingEnabled: Bool) {
+    private func configurePrimaryArrow(paddingEnabled: Bool = true) {
         configurePrimaryDefault(paddingEnabled: paddingEnabled)
-        
-        let icon = UIImage(named: "chevron-right")
-        setImage(icon, for: [])
-        imageView?.contentMode = .scaleAspectFit
-//        #warning("Finish Primary Arrow button")
+        setImage(UIImage(systemName: "chevron.right"), for: [])
     }
     
-    private func configurePrimaryIcon(paddingEnabled: Bool) {
+    private func configurePrimaryIcon(paddingEnabled: Bool = true) {
         configurePrimaryDefault(paddingEnabled: paddingEnabled)
-        
-        let icon = UIImage(named: "heart")
-        setImage(icon, for: [])
-        imageView?.contentMode = .scaleAspectFit
-//        #warning("Finish Primary Icon button")
+        setImage(UIImage(systemName: "heart.fill"), for: [])
     }
     
-    private func configureSecondaryDefault(paddingEnabled: Bool) {
+    private func configureSecondaryDefault(paddingEnabled: Bool = true) {
         titleLabel?.font = StyleGuide.Button.Font.default.font
         
         if paddingEnabled {
@@ -145,7 +160,7 @@ public class DSButton: UIButton {
         setBackgroundColor(StyleGuide.Button.BackgroundColor.secondary.disabled, for: .disabled)
     }
     
-    private func configureSecondaryArrow(paddingEnabled: Bool) {
+    private func configureSecondaryArrow(paddingEnabled: Bool = true) {
         configureSecondaryDefault(paddingEnabled: paddingEnabled)
         
         //FIXME: Not finding icons
@@ -155,7 +170,7 @@ public class DSButton: UIButton {
 //        #warning("Finish Secondary Arrow button")
     }
     
-    private func configureSecondaryIcon(paddingEnabled: Bool) {
+    private func configureSecondaryIcon(paddingEnabled: Bool = true) {
         configureSecondaryDefault(paddingEnabled: paddingEnabled)
         
         //FIXME: Not finding icons
