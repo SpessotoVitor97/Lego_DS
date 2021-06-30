@@ -13,7 +13,6 @@ public struct StyleGuide {
     // MARK: - Public structs
     //*************************************************
     struct Button {
-        
         enum Font {
             case `default`
             
@@ -88,23 +87,22 @@ public struct StyleGuide {
 
     }
     
-    //*************************************************
-    // MARK: - Internal helpers
-    //*************************************************
-    internal enum Text {
+    public enum Text {
         case defaultButtonText
+        case defaultText
         
         var font: UIFont {
             switch self {
             case .defaultButtonText:
+                return Font.default(size: 17)
+                
+            case .defaultText:
                 return Font.default(size: 17)
             }
         }
     }
     
     internal struct Font {
-        
-        //FIXME: Not finding Custom font
         static func `default`(size: CGFloat) -> UIFont {
             if let font = UIFont(name: "Montserrat-ExtraBold", size: size) {
                 return font

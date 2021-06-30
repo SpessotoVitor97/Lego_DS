@@ -24,9 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var primaryArrowButton: DSButton!
     @IBOutlet weak var primaryIconButton: DSButton!
     
-//    @IBOutlet weak var secondaryArrowButton: DSButton!
-//    @IBOutlet weak var secondaryIconButton: DSButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPrimaryButtons()
@@ -58,11 +55,9 @@ class ViewController: UIViewController {
         
         primaryArrowButton.configure(with: .primaryArrow)
         primaryArrowButton.setTitle("Arrow", for: [])
-        primaryArrowButton.setImage(UIImage(systemName: "chevron.rigth"), for: [])
         
         primaryIconButton.configure(with: .primaryIcon)
         primaryIconButton.setTitle("Icon", for: [])
-//        primaryIconButton.setImage(UIImage(systemName: "heart.fill"), for: [])
     }
     
     func setupSecondaryButtons() {
@@ -80,24 +75,7 @@ class ViewController: UIViewController {
         secondaryDefaultButtonDisabled.configure(with: .secondaryDefault)
         secondaryDefaultButtonDisabled.setTitle("Disabled", for: [])
         secondaryDefaultButtonDisabled.isEnabled = false
-        
-//        secondaryArrowButton.configure(with: .secondaryArrow)
-//        secondaryIconButton.configure(with: .secondaryIcon)
-    }
-    
-    func setAccessibilityIds() {
-        primaryDefaultButton.accessibilityIdentifier = ""
-        primaryDefaultButtonHighlighted.accessibilityIdentifier = ""
-        primaryDefaultButtonSelected.accessibilityIdentifier = ""
-        primaryDefaultButtonDisabled.accessibilityIdentifier = ""
-//        primaryArrowButton.accessibilityIdentifier = ""
-//        primaryIconButton.accessibilityIdentifier = ""
-        
-        secondaryDefaultButton.accessibilityIdentifier = ""
-        secondaryDefaultButtonHighlighted.accessibilityIdentifier = ""
-        secondaryDefaultButtonSelected.accessibilityIdentifier = ""
-        secondaryDefaultButtonDisabled.accessibilityIdentifier = ""
-    }
 
+    }
 }
 

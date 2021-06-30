@@ -1,5 +1,5 @@
 import XCTest
-import Lego_DS
+@testable import Lego_DS
 
 class Tests: XCTestCase {
     
