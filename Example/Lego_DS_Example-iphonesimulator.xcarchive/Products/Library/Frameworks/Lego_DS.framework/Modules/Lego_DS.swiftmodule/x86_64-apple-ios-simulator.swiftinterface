@@ -1,0 +1,78 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 effective-4.1.50 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name Lego_DS
+import Foundation
+@_exported import Lego_DS
+import Swift
+import UIKit
+public protocol Reusable {
+}
+extension Reusable {
+  public static var nib: UIKit.UINib {
+    get
+  }
+  public static var identifier: Swift.String {
+    get
+  }
+}
+extension UITableViewCell : Lego_DS.Reusable {
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DSButton : UIKit.UIButton {
+  @objc override dynamic public var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  public func configure(with style: Lego_DS.DSButtonStyle, paddingEnabled: Swift.Bool = true)
+  @objc deinit
+}
+public enum DSButtonStyle {
+  case primaryDefault
+  case primaryArrow
+  case primaryIcon
+  case secondaryDefault
+  case secondaryArrow
+  case secondaryIcon
+  public static func == (a: Lego_DS.DSButtonStyle, b: Lego_DS.DSButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class DefaultCellViewModel {
+  public var id: Swift.String?
+  public var title: Swift.String
+  public var cellHeight: CoreGraphics.CGFloat
+  public var shouldHideCustomDivider: Swift.Bool
+  public init(title: Swift.String)
+  public init(id: Swift.String, cellHeight: CoreGraphics.CGFloat? = nil, title: Swift.String)
+  @objc deinit
+}
+public struct StyleGuide {
+  public enum Text {
+    case defaultButtonText
+    case defaultText
+    public static func == (a: Lego_DS.StyleGuide.Text, b: Lego_DS.StyleGuide.Text) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc @_inheritsConvenienceInitializers public class DefaultTableViewCell : UIKit.UITableViewCell {
+  public var viewModel: Lego_DS.DefaultCellViewModel?
+  @objc override dynamic public func awakeFromNib()
+  @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  public func setup()
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Lego_DS.DSButtonStyle : Swift.Equatable {}
+extension Lego_DS.DSButtonStyle : Swift.Hashable {}
+extension Lego_DS.StyleGuide.Text : Swift.Equatable {}
+extension Lego_DS.StyleGuide.Text : Swift.Hashable {}
