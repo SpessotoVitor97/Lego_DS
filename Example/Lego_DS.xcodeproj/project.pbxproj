@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2632CE2A0A07536D1AF48C16 /* Pods_Lego_DS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D259522325BB362E3A0F79 /* Pods_Lego_DS_Example.framework */; };
+		2D456800268B6F11008F676F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567FF268B6F11008F676F /* HomeViewController.swift */; };
+		2D456802268B6F32008F676F /* DefaultCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D456801268B6F32008F676F /* DefaultCellViewController.swift */; };
+		2D456804268B8692008F676F /* DefaultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D456803268B8691008F676F /* DefaultTableViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		0BEAB32CD75C84E1972DE949 /* Pods-Lego_DS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lego_DS_Example.debug.xcconfig"; path = "Target Support Files/Pods-Lego_DS_Example/Pods-Lego_DS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4567FF268B6F11008F676F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D456801268B6F32008F676F /* DefaultCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCellViewController.swift; sourceTree = "<group>"; };
+		2D456803268B8691008F676F /* DefaultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewController.swift; sourceTree = "<group>"; };
 		38D259522325BB362E3A0F79 /* Pods_Lego_DS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lego_DS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* Lego_DS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lego_DS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,8 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				2D4567FF268B6F11008F676F /* HomeViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				2D456801268B6F32008F676F /* DefaultCellViewController.swift */,
+				2D456803268B8691008F676F /* DefaultTableViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -333,6 +342,9 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2D456802268B6F32008F676F /* DefaultCellViewController.swift in Sources */,
+				2D456800268B6F11008F676F /* HomeViewController.swift in Sources */,
+				2D456804268B8692008F676F /* DefaultTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

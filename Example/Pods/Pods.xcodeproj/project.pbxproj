@@ -33,6 +33,12 @@
 		2D4567E5268A4399008F676F /* chevron-right.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2D4567E3268A4398008F676F /* chevron-right.svg */; };
 		2D4567E6268A4399008F676F /* heart.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2D4567E4268A4399008F676F /* heart.svg */; };
 		2D4567E9268A4778008F676F /* Fonts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D4567E8268A4778008F676F /* Fonts.plist */; };
+		2D4567F3268B61DD008F676F /* CellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567F2268B61DD008F676F /* CellListViewModel.swift */; };
+		2D4567F6268B62A8008F676F /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567F4268B62A8008F676F /* DefaultTableViewCell.swift */; };
+		2D4567F7268B62A8008F676F /* DefaultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4567F5268B62A8008F676F /* DefaultTableViewCell.xib */; };
+		2D4567F9268B6899008F676F /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567F8268B6899008F676F /* NSAttributedString+Utils.swift */; };
+		2D4567FC268B6BB5008F676F /* TableViewCellViewModelComposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567FB268B6BB5008F676F /* TableViewCellViewModelComposable.swift */; };
+		2D4567FE268B6CE5008F676F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4567FD268B6CE5008F676F /* Reusable.swift */; };
 		4CC7AA2089A855A7F17A934F881C6596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		504F38D77DA5B3985E1B74FDAF9D1BC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		54FDE801ECAEE266568F0EA79B15A437 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -94,6 +100,12 @@
 		2D4567E3268A4398008F676F /* chevron-right.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chevron-right.svg"; sourceTree = "<group>"; };
 		2D4567E4268A4399008F676F /* heart.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heart.svg; sourceTree = "<group>"; };
 		2D4567E8268A4778008F676F /* Fonts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fonts.plist; sourceTree = "<group>"; };
+		2D4567F2268B61DD008F676F /* CellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellListViewModel.swift; sourceTree = "<group>"; };
+		2D4567F4268B62A8008F676F /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		2D4567F5268B62A8008F676F /* DefaultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTableViewCell.xib; sourceTree = "<group>"; };
+		2D4567F8268B6899008F676F /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
+		2D4567FB268B6BB5008F676F /* TableViewCellViewModelComposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelComposable.swift; sourceTree = "<group>"; };
+		2D4567FD268B6CE5008F676F /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		3A84EA7DDEE3B15C1BE92DC7DAA66934 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D02DE9BC4C5E7CFC6FE4CE2600B40E3 /* Pods-Lego_DS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lego_DS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D031E429775B9EDCF9E45EE2DC1A182 /* Pods-Lego_DS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lego_DS_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -229,6 +241,7 @@
 				2D4567B2268A41B7008F676F /* UIImage+Utils.swift */,
 				2D4567B6268A41F4008F676F /* UIColor+Utils.swift */,
 				2D4567B8268A423D008F676F /* UIView+Utils.swift */,
+				2D4567F8268B6899008F676F /* NSAttributedString+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -245,9 +258,38 @@
 		2D4567EB268B60AA008F676F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2D4567B0268A418C008F676F /* DSButton.swift */,
+				2D4567EC268B618E008F676F /* DSButton */,
+				2D4567ED268B6197008F676F /* CellList */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2D4567EC268B618E008F676F /* DSButton */ = {
+			isa = PBXGroup;
+			children = (
+				2D4567B0268A418C008F676F /* DSButton.swift */,
+			);
+			path = DSButton;
+			sourceTree = "<group>";
+		};
+		2D4567ED268B6197008F676F /* CellList */ = {
+			isa = PBXGroup;
+			children = (
+				2D4567FA268B6BA2008F676F /* Protocols */,
+				2D4567F4268B62A8008F676F /* DefaultTableViewCell.swift */,
+				2D4567F5268B62A8008F676F /* DefaultTableViewCell.xib */,
+				2D4567F2268B61DD008F676F /* CellListViewModel.swift */,
+			);
+			path = CellList;
+			sourceTree = "<group>";
+		};
+		2D4567FA268B6BA2008F676F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2D4567FB268B6BB5008F676F /* TableViewCellViewModelComposable.swift */,
+				2D4567FD268B6CE5008F676F /* Reusable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		33E70F423C8FA16A903CF884EBB930E4 /* Development Pods */ = {
@@ -478,6 +520,7 @@
 				2D4567CE268A436E008F676F /* Montserrat-Regular.ttf in Resources */,
 				2D4567CD268A436E008F676F /* Montserrat-Black.ttf in Resources */,
 				2D4567D0268A436E008F676F /* Montserrat-Medium.ttf in Resources */,
+				2D4567F7268B62A8008F676F /* DefaultTableViewCell.xib in Resources */,
 				2D4567D2268A436E008F676F /* Montserrat-BlackItalic.ttf in Resources */,
 				2D4567DF268A436E008F676F /* Montserrat-Thin.ttf in Resources */,
 				2D4567E9268A4778008F676F /* Fonts.plist in Resources */,
@@ -519,11 +562,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D4567B7268A41F4008F676F /* UIColor+Utils.swift in Sources */,
+				2D4567FE268B6CE5008F676F /* Reusable.swift in Sources */,
 				2D4567B1268A418C008F676F /* DSButton.swift in Sources */,
+				2D4567F3268B61DD008F676F /* CellListViewModel.swift in Sources */,
+				2D4567F9268B6899008F676F /* NSAttributedString+Utils.swift in Sources */,
 				E91EC5EA8BDE2F2B75668BF0338D4EC0 /* Lego_DS-dummy.m in Sources */,
 				2D4567B5268A41D6008F676F /* StyleGuide.swift in Sources */,
+				2D4567F6268B62A8008F676F /* DefaultTableViewCell.swift in Sources */,
 				2D4567B9268A423D008F676F /* UIView+Utils.swift in Sources */,
 				2D4567B3268A41B7008F676F /* UIImage+Utils.swift in Sources */,
+				2D4567FC268B6BB5008F676F /* TableViewCellViewModelComposable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
